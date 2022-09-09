@@ -99,6 +99,154 @@ body {
 .main header .logo a img {
   width: 100px;
 }
+.main header .device {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.main header .device .container .open-main-nav {
+  position: absolute;
+  top: 15px;
+  padding-top: 20px;
+  right: 15px;
+  z-index: 1000;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.main header .device .container .open-main-nav:focus {
+  outline: none;
+}
+.main header .device .container .open-main-nav .burger i {
+  position: relative;
+  display: block;
+  font-size: 35px;
+  margin: 0 auto;
+  color: #3d5a80;
+  transform: skew(5deg);
+  transition: all 0.275s;
+}
+.main header .device .container .open-main-nav .burger::after, .main header .device .container .open-main-nav .burger::before {
+  content: "";
+  display: block;
+  height: 100%;
+  background: #5A3B5D;
+  transition: all 0.275s;
+}
+.main header .device .container .open-main-nav .burger::after {
+  transform: translateY(-12px) translateX(-2px) skew(-20deg);
+}
+.main header .device .container .open-main-nav .burger::before {
+  transform: translateY(-16px) skew(-10deg);
+}
+.main header .device .container .open-main-nav #burger.is-open {
+  transform: skew(5deg) translateY(-8px) rotate(-45deg);
+}
+.main header .device .container .open-main-nav #burger.is-open::before {
+  transform: translateY(0px) skew(-10deg) rotate(75deg);
+}
+.main header .device .container .open-main-nav #burger.is-open::after {
+  transform: translateY(-12px) translateX(10px) skew(-20deg);
+  opacity: 0;
+}
+.main header .device .container .open-main-nav .burger-text {
+  display: block;
+  font-size: 0.675rem;
+  letter-spacing: 0.05em;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  color: #3d5a80;
+}
+.main header .device .container .logo_mobile a img {
+  width: 100px;
+}
+.main header .device .container .is-open .burger i {
+  color: #fff;
+}
+.main header .device .container .is-open .burger-text {
+  color: #fff;
+}
+.main header .device .main-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background: #fff;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  transition: all 0.375s;
+}
+.main header .device .main-nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -15px;
+  background: #3d5a80;
+  transform-origin: 0 0;
+  transform: skew(-14deg) translateX(-120%);
+  transition: all 0.275s 0.1s;
+}
+.main header .device .main-nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: column;
+  height: 80%;
+  /* Should be 100%, but we have a notice message :D */
+  align-items: flex-end;
+  justify-content: center;
+  transform: translateX(-18%) skew(-16deg);
+}
+.main header .device .main-nav ul li {
+  list-style: none;
+  padding: 0;
+  display: block;
+  margin: 0.5rem 0;
+  text-align: right;
+  transform: skew(16deg);
+}
+.main header .device .main-nav ul li a {
+  opacity: 0;
+  transform: translateY(-10px);
+  display: block;
+  padding: 12px 0;
+  color: #fff;
+  font-size: 1.4em;
+  text-decoration: none;
+  font-weight: bold;
+}
+.main header .device .main-nav ul li:nth-child(1) a {
+  transition: all 275ms 175ms;
+}
+.main header .device .main-nav ul li:nth-child(2) a {
+  transition: all 275ms 225ms;
+}
+.main header .device .main-nav ul li:nth-child(3) a {
+  transition: all 275ms 275ms;
+}
+.main header .device .main-nav ul li:nth-child(4) a {
+  transition: all 275ms 325ms;
+}
+.main header .device .main-nav.is-open {
+  opacity: 1;
+  z-index: 100;
+  visibility: visible;
+}
+.main header .device .main-nav.is-open::before {
+  transform: skew(-14deg) translateX(0);
+}
+.main header .device .main-nav.is-open ul li a {
+  opacity: 1;
+  transform: translateY(0);
+}
 .main .hero_sec {
   display: grid;
   grid-template-columns: 100%;
@@ -251,5 +399,42 @@ body {
   25% {
     opacity: 0;
     transform: translateY(90px) rotate(10deg);
+  }
+}
+@media only screen and (max-width: 415px) {
+  .main {
+    padding: 100px 10px;
+  }
+  .main header {
+    text-align: center;
+    padding: 0;
+  }
+  .main header .links {
+    display: none;
+  }
+  .main header .logo {
+    display: none;
+  }
+  .main header .device {
+    display: block;
+  }
+  .main .hero_sec {
+    place-items: start;
+    padding: 100px 0;
+  }
+  .main .hero_sec .hero_sec_text {
+    padding: 0;
+    text-align: center;
+  }
+  .main .hero_sec .hero_sec_text h1 {
+    font-size: 30px;
+  }
+  .main .hero_sec .hero_sec_text h1 .rotate-words span {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .main .hero_sec .hero_sec_text a {
+    margin-top: 80px;
   }
 }/*# sourceMappingURL=style.css.map */
