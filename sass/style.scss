@@ -423,7 +423,7 @@ body {
         .all-text {
             width: 600px;
             max-width: 100%;
-            padding: 0 10px;
+            padding: 0 30px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -569,6 +569,22 @@ body {
 
                 a {
                     margin-top: 80px;
+                }
+            }
+        }
+    }
+    .about{
+        margin-top: 60px;
+        .about-main{
+            .all-text{
+                .about-title{
+                    font-size: 30px;
+                }
+                .about-Subtitle{
+                    font-size: 20px;
+                }
+                .about-text{
+                    margin-top: 15px;
                 }
             }
         }

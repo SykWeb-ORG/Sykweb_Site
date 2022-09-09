@@ -348,7 +348,7 @@ body {
 .about .about-main .all-text {
   width: 600px;
   max-width: 100%;
-  padding: 0 10px;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -514,5 +514,17 @@ body {
   }
   .main .hero_sec .hero_sec_text a {
     margin-top: 80px;
+  }
+  .about {
+    margin-top: 60px;
+  }
+  .about .about-main .all-text .about-title {
+    font-size: 30px;
+  }
+  .about .about-main .all-text .about-Subtitle {
+    font-size: 20px;
+  }
+  .about .about-main .all-text .about-text {
+    margin-top: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
