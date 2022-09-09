@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -90,6 +91,8 @@ body {
   padding: 10px;
 }
 .main header .links a:hover {
+  background-color: #3d5a80;
+  color: #fff;
   background-color: #3d5a80;
   color: #fff;
   border-radius: 50px;
@@ -267,6 +270,7 @@ body {
   display: inline;
   margin-left: 10px;
   color: #fff;
+  color: #fff;
 }
 .main .hero_sec .hero_sec_text h1 .rotate-words span {
   width: -webkit-max-content;
@@ -311,9 +315,86 @@ body {
 .main .hero_sec .hero_sec_text a:hover {
   border-color: transparent;
   color: #fff;
+  color: #fff;
 }
 .main .hero_sec .hero_sec_text a:hover::before {
   transform: scale(1) translate(-30px, -70px);
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-main {
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.about .about-main img {
+  width: 580px;
+  max-width: 100%;
+  height: auto;
+  padding: 0 10px;
+  border-radius: 80px;
+}
+.about .about-main .all-text {
+  width: 600px;
+  max-width: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-main .all-text .about-title {
+  font-size: 40px;
+  color: #3d5a80;
+  letter-spacing: 1px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-family: "Dosis", "sans-serif";
+}
+.about .about-main .all-text .about-Subtitle {
+  font-size: 40px;
+  color: #111111;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.about .about-main .all-text .about-text {
+  font-size: 18px;
+  color: #777777;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.about .about-main .all-text .btn a {
+  display: inline-block;
+  padding: 16px 27px;
+  font-size: 14px;
+  margin-top: 15px;
+  color: #3d5a80;
+  text-transform: uppercase;
+  border-radius: 50px;
+  text-decoration: none;
+  outline: none;
+  padding: 20px 32px;
+  cursor: pointer;
+  box-shadow: 0px 16px 32px 0px #3d5a80;
+}
+.about .about-main .all-text .btn a:hover {
+  color: #fff;
+  background-color: #3d5a80;
+  transform-origin: left;
+  transition: 0.4s ease-in;
 }
 
 @-webkit-keyframes shape {
