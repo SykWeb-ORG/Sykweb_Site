@@ -8,12 +8,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="./stylesheet/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <title>SYKWEB</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
-
+    <section class="loader_body">
+        <div class="loader_content">
+            <div class="random">
+                 <span class="nbr ltr">0</span>
+                 <span class="nbr ltr">0</span>
+                 <span class="nbr ltr">0</span>
+                 <span class="nbr ltr">0</span>
+                 <span class="nbr ltr">0</span>
+                 <span class="nbr ltr">0</span>
+            </div>
+       </div>
+    </section>
+<div class="site_body">
     <section id="main" class="main">
         <div class="shape">
             <img src="./images/back_logo.png" alt="" class="shape1">
@@ -99,6 +112,29 @@
             </div>
         </div>
     </section>
+    <div class="content">
+        <div class="img">
+            <img src="./images/code.png" alt="" class="front">
+            <img src="./images/code.png" alt="" class="back">
+        </div>
+        <div class="text">
+            <div class="line">
+                <span data-src="images/js.png">JavaScript</span><span data-src="images/css.png">css</span>
+                <span data-src="images/js.png">JavaScript</span><span data-src="images/css.png">css</span>
+                <span data-src="images/js.png">JavaScript</span><span data-src="images/css.png">css</span>
+            </div>
+            <div class=" line line2">
+                <span data-src="images/html.png">html</span><span data-src="images/sass.png">sass</span>
+                <span data-src="images/html.png">html</span><span data-src="images/sass.png">sass</span>
+                <span data-src="images/html.png">html</span><span data-src="images/sass.png">sass</span>
+            </div>
+            <div class="line line3">
+                <span data-src="images/flutter.png">flutter</span><span data-src="images/dart.png">dart</span>
+                <span data-src="images/flutter.png">flutter</span><span data-src="images/dart.png">dart</span>
+                <span data-src="images/flutter.png">flutter</span><span data-src="images/dart.png">dart</span>
+            </div>
+        </div>
+    </div>
     <section class="service" id="service">
         <h1 class="service_title">Our Services</h1>
         <div class="services_content">
@@ -164,33 +200,13 @@
             </div>
         </div>
     </section>
-
-    <div class="content">
-        <div class="img">
-            <img src="./images/code.png" alt="" class="front">
-            <img src="./images/code.png" alt="" class="back">
-        </div>
-        <div class="text">
-            <div class="line">
-                <span data-src="images/js.png">JavaScript</span><span data-src="images/css.png">css</span>
-                <span data-src="images/js.png">JavaScript</span><span data-src="images/css.png">css</span>
-                <span data-src="images/js.png">JavaScript</span><span data-src="images/css.png">css</span>
-            </div>
-            <div class=" line line2">
-                <span data-src="images/html.png">html</span><span data-src="images/sass.png">sass</span>
-                <span data-src="images/html.png">html</span><span data-src="images/sass.png">sass</span>
-                <span data-src="images/html.png">html</span><span data-src="images/sass.png">sass</span>
-            </div>
-            <div class="line line3">
-                <span data-src="images/flutter.png">flutter</span><span data-src="images/dart.png">dart</span>
-                <span data-src="images/flutter.png">flutter</span><span data-src="images/dart.png">dart</span>
-                <span data-src="images/flutter.png">flutter</span><span data-src="images/dart.png">dart</span>
-            </div>
-        </div>
-    </div>
-
+    <section class="project" id="project">
+        
+    </section>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./javascript/loader.js"></script>
+    <script src="./javascript/script.js"></script>
 </body>
 
 </html>
