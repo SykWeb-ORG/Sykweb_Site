@@ -48,3 +48,12 @@ $(document).ready(function () {
         }
     })
 })
+//sticky navbar
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 20) {
+        $('.header_container').addClass('sticky-header');
+    }
+    else {
+        $('.header_container').removeClass('sticky-header');
+    }
+});
