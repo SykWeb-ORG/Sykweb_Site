@@ -117,7 +117,20 @@ body {
                 transform: translate(0, -150px) rotate(0deg);
             }
         }
-    
+        .sticky-header{
+            background: $white_color;
+            .links{
+                a{
+                    transition: 0.5s;
+                    animation: transitionIN 0.75s;
+                    -webkit-animation: transitionIN 0.75s;
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -ms-transition: 0.5s;
+                    -o-transition: 0.5s;
+                }
+            }
+        }
         header {
             display: flex;
             justify-content: space-evenly;
@@ -128,7 +141,7 @@ body {
             left: 0;
             width: 100%;
             z-index: 999;
-            height: 120px;
+            height: 100px;
     
             .links {
                 a {
