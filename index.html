@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <link rel="stylesheet" href="/stylesheet/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <title>SYKWEB</title>
@@ -37,15 +39,15 @@
         </div>
         <header>
             <div class="links">
-                <a href="#">Home</a>
-                <a href="#service">Services</a>
+                <a href="#main">Home</a>
+                <a href="#about">About us</a>
             </div>
             <div class="logo">
                 <a href="#"><img src="./images/logo.png" alt=""></a>
             </div>
             <div class="links">
-                <a href="#">Projects</a>
-                <a href="#">About us</a>
+                <a href="#service">Services</a>
+                <a href="#project">Projects</a>
             </div>
             <div class="device">
                 <div class="container">
@@ -65,7 +67,7 @@
                                 <a href="#service">Services</a>
                             </li>
                             <li>
-                                <a href="#">Projects</a>
+                                <a href="#project">Projects</a>
                             </li>
                             <li>
                                 <a href="#about">About us</a>
@@ -201,12 +203,47 @@
         </div>
     </section>
     <section class="project" id="project">
-        
+        <h1 class="project_title">Our Projects</h1>
+        <div class="container">
+            <div class="slider">
+                <div class="owl-carousel">
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/hotel_logo.jpg" alt="">
+                        </div>
+                        <h5 class="text-center p-4">Holux Hotel</h5>
+                        <a href="https://holux-sarhir.netlify.app" target="_blank" class="text-center"><span>Go Visit</span></a>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/pikala_logo.jpg" alt="">
+                        </div>
+                        <h5 class="text-center p-4">Pikala Coffee</h5>
+                        <a href="#" class="text-center"><span>Go Visit</span></a>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/bonjourno.jpg" alt="">
+                        </div>
+                        <h5 class="text-center p-4">Bonjourno Coffee</h5>
+                        <a href="#" class="text-center"><span>Go Visit</span></a>
+                    </div>
+                    <div class="slider-card">
+                        <div class="d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/2.png" alt="">
+                        </div>
+                        <h5 class="text-center p-4">3Coeur Cardiology Center</h5>
+                        <a href="#" class="text-center"><span>Go Visit</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./javascript/loader.js"></script>
-    <script src="./javascript/script.js"></script>
+    <script src="/javascript/loader.js"></script>
+    <script src="/javascript/owl.carousel.min.js"></script>
+    <script src="/javascript/script.js"></script>
 </body>
 
 </html>
