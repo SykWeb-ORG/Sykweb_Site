@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="/stylesheet/style.css">
+    <link rel="stylesheet" href="/stylesheet/style.min.css">
     <link rel="stylesheet" href="/stylesheet/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,7 @@
                 <a href="#about">About us</a>
             </div>
             <div class="logo">
-                <a href="#"><img src="./images/logo.png" alt=""></a>
+                <a href="#main"><img src="./images/logo.png" alt=""></a>
             </div>
             <div class="links">
                 <a href="#service">Services</a>
@@ -109,7 +109,7 @@
                 </p>
                 <div class="btn">
                     <a href="#">Our Team</a>
-                    <a href="#">Contact Us</a>
+                    <a href="#contact">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -202,6 +202,23 @@
             </div>
         </div>
     </section>
+    <section class="pub_project">
+        <div class="pub_project__bg">
+            <div class="pub_project__container">
+                <div class="pub_project__data">
+                    <h2 class="pub_project__title">You have a new project</h2>
+                    <div class="project__description">
+                        <span>Contact us now<br></span> and get a 30% discount on your new project.
+                    </div>
+                    <a href="#contact" class="button button--flex button--white">
+                        Contact Us
+                        <i class="fa-solid fa-circle-arrow-right pub_project__icon"></i>
+                    </a>
+                </div>
+                <img src="/images/bg_pub_project.jpg" class="pub_project__img" alt="">
+            </div>
+        </div>
+    </section>
     <section class="project" id="project">
         <h1 class="project_title">Our Projects</h1>
         <div class="container">
@@ -239,7 +256,85 @@
             </div>
         </div>
     </section>
+
+    <section id="contact" class="contact">
+        <h1 class="contact_title">Contact Us</h1>
+        <div class="container">
+            <span class="big_circle"></span>
+            <div class="form">
+                <div class="contact_info">
+                    <h3 class="title">Let's get in touch</h3>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consecteur adipsicuig elit. Saepe
+                        dolorum adipisci recusandae praesentium dicta!
+                    </p>
+                    <div class="info">
+                        <div class="information">
+                            <i class="info_icon fa-solid fa-map-location-dot"></i>
+                            <p>Marrakech , Morrocco</p>
+                        </div>
+                        <div class="information">
+                            <i class="info_icon fa-solid fa-envelope"></i>
+                            <p>sykweb10@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <i class="info_icon fa-solid fa-phone"></i>
+                            <p>+212-625-461-645</p>
+                        </div>
+                    </div>
+                    <div class="social_media">
+                        <p>Connect with us :</p>
+                        <div class="social_icon">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact_form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+                    <form action="index.html">
+                        <h3 class="title">Send Email</h3>
+                        <div class="input_container">
+                            <input type="text" name="name" class="input">
+                            <label for="name">Username</label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input_container">
+                            <input type="email" name="email" class="input">
+                            <label for="email">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input_container">
+                            <input type="tel" name="phone" class="input">
+                            <label for="phone">Phone Number</label>
+                            <span>Phone Number</span>
+                        </div>
+                        <div class="input_container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for="message">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+<a href="#main" class="scroll_up" id="scroll_up">
+    <i class="fa-solid fa-circle-chevron-up"></i>
+</a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/javascript/loader.js"></script>
     <script src="/javascript/owl.carousel.min.js"></script>

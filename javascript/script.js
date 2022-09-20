@@ -52,8 +52,26 @@ $(document).ready(function () {
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 20) {
         $('.header_container').addClass('sticky-header');
+        $('.scroll_up').css('bottom','2rem')
     }
     else {
         $('.header_container').removeClass('sticky-header');
+        $('.scroll_up').css('bottom','-10rem')
     }
 });
+//contact focus input
+const inputs = document.querySelectorAll('.input');
+function focusFunc(){
+    let parent = this.parentNode;
+    parent.classList.add('focus');
+}
+function blurFunc(){
+    let parent = this.parentNode;
+    if(this.value == ""){
+    parent.classList.remove('focus');
+    }
+}
+inputs.forEach(input => {
+    input.addEventListener('focus',focusFunc);
+    input.addEventListener('blur',blurFunc);
+})
