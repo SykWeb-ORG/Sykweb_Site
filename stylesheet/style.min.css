@@ -147,7 +147,7 @@ body {
 .site_body .main header .links a:hover {
   letter-spacing: 0.25rem;
   background: transparent;
-  box-shadow: 0 0 15px #1e9bff;
+  box-shadow: 0 0 5px #1e9bff;
 }
 .site_body .main header .links a:before {
   content: "";
