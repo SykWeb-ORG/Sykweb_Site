@@ -713,7 +713,7 @@ body {
             grid-template-columns: repeat(3,1fr);
             min-height: 500px;
             .card{
-                height: 350px;
+                height: 450px;
                 width: 300px;
                 padding: 20px 35px;
                 border-radius: 10px;
@@ -743,12 +743,14 @@ body {
                         font-size: 14px;
                         color: #535c68;
                         line-height: 18px;
+                        text-align: center;
                     }
                     .Read_more{
                         text-align: center;
                         position: absolute;
                         transform: translate(50%,50%);
                         top: 60%;
+                        margin-top: 20px;
                         a{
                             position: relative;
                             border:none;    
@@ -796,36 +798,50 @@ body {
                             }
                         }
                     }
+                    .modal-dialog {
+                        height: 100vh !important;
+                        display: flex;
+                        .modal-content{
+                            margin: auto !important;
+                            .modal-body {
+                                display: flex;
+                                justify-content: center;
+                                .video_service {
+                                    width: 400px;
+                                }
+                            }
+                        }
+                    }
                 }
-                &:hover{
-                    color: $white_color;
-                    border: none;
-                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-                    animation: rotate 0.7s ease-in-out both ;
-                }
-                &:before,&:after{
-                    content:'';
-                    background: $blue_color;
-                    width: 180px;
-                    height: 180px;
-                    border-radius: 50%;
-                    opacity: 0;
-                    position: absolute;
-                    right: 0;
-                    bottom: -80px;
-                    z-index: -1;
-                    transform: translate(100%,25%) translate3d(0,0,0);
-                    transform-origin: all 0.15s cubic-bezier(0.02,0.01,0.47,1);
-                }
-                &:hover:before,&:hover:after{
-                    opacity: 0.15;
-                }
-                &:hover:before{
-                    transform: translate3d(50%,0,0)scale(0.9);
-                }
-                &:hover:after{
-                    transform: translate(50%,0);
-                }
+                // &:hover{
+                //     color: $white_color;
+                //     border: none;
+                //     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                //     animation: rotate 0.7s ease-in-out both ;
+                // }
+                // &:before,&:after{
+                //     content:'';
+                //     background: $blue_color;
+                //     width: 180px;
+                //     height: 180px;
+                //     border-radius: 50%;
+                //     opacity: 0;
+                //     position: absolute;
+                //     right: 0;
+                //     bottom: -80px;
+                //     z-index: -1;
+                //     transform: translate(100%,25%) translate3d(0,0,0);
+                //     transform-origin: all 0.15s cubic-bezier(0.02,0.01,0.47,1);
+                // }
+                // &:hover:before,&:hover:after{
+                //     opacity: 0.15;
+                // }
+                // &:hover:before{
+                //     transform: translate3d(50%,0,0)scale(0.9);
+                // }
+                // &:hover:after{
+                //     transform: translate(50%,0);
+                // }
             }
         }
     }
@@ -1676,6 +1692,15 @@ body {
                         .Read_more{
                             top: 60%;
                         }
+                        .modal-dialog{
+                            .modal-content{
+                                .modal-body{
+                                    .video_service {
+                                        width: 300px;
+                                    }
+                                }   
+                            }
+                        }
                     }
                 }
             }
@@ -1720,6 +1745,9 @@ body {
             }
         }
         .contact{
+            .contact_title{
+                font-size: 30px;
+            }
             .container{
                 padding: 1.5rem;
                 .form{
@@ -1779,6 +1807,9 @@ body {
             }
             p{
                 font-size: 1rem;
+                span{
+                    font-size: 20px;
+                }
             }
         }
     }

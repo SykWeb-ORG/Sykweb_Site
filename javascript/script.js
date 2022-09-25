@@ -75,3 +75,8 @@ inputs.forEach(input => {
     input.addEventListener('focus',focusFunc);
     input.addEventListener('blur',blurFunc);
 })
+$(document).ready(function () {
+    $("#click_video").on('click', function () {
+        $(".video_service").attr('autoplay');
+    })
+})
