@@ -79,4 +79,7 @@ $(document).ready(function () {
     $("#click_video").on('click', function () {
         $(".video_service").attr('autoplay');
     })
+    $('#exampleModal').on('hide.bs.modal', function(e) {
+        this.querySelector('video').pause();
+    })
 })
