@@ -1,4 +1,5 @@
 let burger = document.getElementById('burger'),
+    linkMenu = document.querySelectorAll('.link'),
     nav = document.getElementById('main-nav');
 
 
@@ -6,6 +7,12 @@ burger.addEventListener('click', function (e) {
     this.classList.toggle('is-open');
     nav.classList.toggle('is-open');
 });
+linkMenu.forEach((link) => {
+    link.addEventListener('click', function (e) {
+        burger.classList.toggle('is-open');
+        nav.classList.toggle('is-open');
+    });
+})
 
 $(document).ready(function () {
     $(".text .line span").on('click', function () {
