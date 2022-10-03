@@ -1,3 +1,9 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_send_email'])) {
+    require_once './emailing/receive.php';
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -427,7 +433,7 @@
                 <div class="contact_form">
                     <span class="circle one"></span>
                     <span class="circle two"></span>
-                    <form action="index.html">
+                    <form action="" method="POST">
                         <h3 class="title">Send Email</h3>
                         <div class="input_container">
                             <input type="text" name="name" class="input">
@@ -449,7 +455,7 @@
                             <label for="message">Message</label>
                             <span>Message</span>
                         </div>
-                        <input type="submit" value="Send" class="btn">
+                        <input type="submit" name="btn_send_email" value="Send" class="btn">
                     </form>
                 </div>
             </div>
