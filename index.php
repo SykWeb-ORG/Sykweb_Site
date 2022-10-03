@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="/stylesheet/style.min.css">
-    <link rel="stylesheet" href="/stylesheet/owl.carousel.min.css">
+    <link rel="stylesheet" href="./stylesheet/style.min.css">
+    <link rel="stylesheet" href="./stylesheet/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -339,7 +339,7 @@
                         <i class="fa-solid fa-circle-arrow-right pub_project__icon"></i>
                     </a>
                 </div>
-                <img src="/images/bg_pub_project.jpg" class="pub_project__img" alt="">
+                <img src="./images/bg_pub_project.jpg" class="pub_project__img" alt="">
             </div>
         </div>
     </section>
@@ -486,9 +486,9 @@
     <i class="fa-solid fa-circle-chevron-up"></i>
 </a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/javascript/loader.js"></script>
-    <script src="/javascript/owl.carousel.min.js"></script>
-    <script src="/javascript/script.js"></script>
+    <script src="./javascript/loader.js"></script>
+    <script src="./javascript/owl.carousel.min.js"></script>
+    <script src="./javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script></body>
 
