@@ -1759,4 +1759,19 @@ body {
   .site_body .main .hero_sec .hero_sec_text a {
     margin-top: 80px;
   }
+  .site_body .service {
+    margin-top: 60px;
+  }
+  .site_body .service .service_title {
+    font-size: 30px;
+  }
+  .site_body .service .services_content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .site_body .service .services_content .card .content .Read_more {
+    top: 60%;
+  }
+  .site_body .service .services_content .card .content .modal-dialog .modal-content .modal-body .video_service {
+    width: 300px;
+  }
 }/*# sourceMappingURL=style.min.css.map */
