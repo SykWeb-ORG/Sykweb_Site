@@ -1815,7 +1815,7 @@ body {
     }
     
 }
-@media screen and (max-width : 820px) {
+@media (min-width : 416px) and (max-width : 820px) {
     .site_body{
         .main {
             padding: 100px 10px;
