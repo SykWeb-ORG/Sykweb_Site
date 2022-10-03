@@ -1879,6 +1879,31 @@ body {
                 }
             }
         }
+        .service{
+            margin-top: 60px;
+            .service_title{
+                font-size: 30px;
+            }
+            .services_content {
+                grid-template-columns: repeat(2, 1fr);
+                .card{
+                    .content{
+                        .Read_more{
+                            top: 60%;
+                        }
+                        .modal-dialog{
+                            .modal-content{
+                                .modal-body{
+                                    .video_service {
+                                        width: 300px;
+                                    }
+                                }   
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
