@@ -2,6 +2,9 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_send_email'])) {
     require_once './emailing/receive.php';
 }
+include_once('../Sykweb_Site/database/db.php'); 
+$sql = "SELECT * FROM projects";
+$stmt = $conn->query($sql);
 
 ?>
 <!DOCTYPE html>
@@ -127,19 +130,58 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_send_email'])) {
         </div>
         <div class="text">
             <div class="line">
-                <span data-src="images/js.png">JavaScript</span><span data-src="images/css.png">css</span>
-                <span data-src="images/js.png">JavaScript</span><span data-src="images/css.png">css</span>
-                <span data-src="images/js.png">JavaScript</span><span data-src="images/css.png">css</span>
+            <?php
+                function js_css()
+                {
+                    global $conn;
+                    $langages = "SELECT * FROM langages WHERE `id` BETWEEN 1 AND 2";
+                    $res = $conn->query($langages)->fetchAll();
+                    foreach ($res as  $lang) {
+                    ?>
+                    <span data-src="images/<?php echo $lang['src_image_lang'] ?>"><?php echo $lang['name_langage'] ?></span>
+                    <?php
+                    }
+                }
+                for ($i=0; $i <3 ; $i++) { 
+                   js_css();
+                }
+                ?>
             </div>
             <div class=" line line2">
-                <span data-src="images/html.png">html</span><span data-src="images/sass.png">sass</span>
-                <span data-src="images/html.png">html</span><span data-src="images/sass.png">sass</span>
-                <span data-src="images/html.png">html</span><span data-src="images/sass.png">sass</span>
+            <?php
+                function html_sass()
+                {
+                    global $conn;
+                    $langages = "SELECT * FROM `langages` WHERE `id` BETWEEN 3 AND 4";
+                    $res = $conn->query($langages)->fetchAll();
+                    foreach ($res as  $lang) {
+                    ?>
+                    <span data-src="images/<?php echo $lang['src_image_lang'] ?>"><?php echo $lang['name_langage'] ?></span>
+                    <?php
+                    }
+                }
+                for ($i=0; $i <3 ; $i++) { 
+                   html_sass();
+                }
+                ?>
             </div>
             <div class="line line3">
-                <span data-src="images/flutter.png">flutter</span><span data-src="images/dart.png">dart</span>
-                <span data-src="images/flutter.png">flutter</span><span data-src="images/dart.png">dart</span>
-                <span data-src="images/flutter.png">flutter</span><span data-src="images/dart.png">dart</span>
+                <?php
+                    function flutter_dart()
+                    {
+                        global $conn;
+                        $langages = "SELECT * FROM `langages` WHERE `id` BETWEEN 5 AND 6";
+                        $res = $conn->query($langages)->fetchAll();
+                        foreach ($res as  $lang) {
+                        ?>
+                        <span data-src="images/<?php echo $lang['src_image_lang'] ?>"><?php echo $lang['name_langage'] ?></span>
+                        <?php
+                        }
+                    }
+                    for ($i=0; $i <3 ; $i++) { 
+                        flutter_dart();
+                    }
+                ?>
             </div>
         </div>
     </div>
@@ -354,34 +396,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_send_email'])) {
         <div class="container">
             <div class="slider">
                 <div class="owl-carousel">
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="images/hotel_logo.jpg" alt="">
+                <?php 
+                    while($row = $stmt->fetch()){
+                    ?>
+                        <div class="slider-card">
+                            <div class="d-flex justify-content-center align-items-center mb-4">
+                                <img src="images/<?php echo $row["src_image"]?>" alt="">
+                            </div>
+                            <h5 class="text-center p-4"><?php echo $row['name_project']?></h5>
+                            <a href="<?php echo $row['link_project'] ?>" target="_blank" class="text-center"><span>Go Visit</span></a>
                         </div>
-                        <h5 class="text-center p-4">Holux Hotel</h5>
-                        <a href="https://holux-sarhir.netlify.app" target="_blank" class="text-center"><span>Go Visit</span></a>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="images/pikala.jpg" alt="">
-                        </div>
-                        <h5 class="text-center p-4">Pikala Coffee</h5>
-                        <a href="#" class="text-center"><span>Go Visit</span></a>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="images/bonjourno.jpg" alt="">
-                        </div>
-                        <h5 class="text-center p-4">Bonjourno Coffee</h5>
-                        <a href="#" class="text-center"><span>Go Visit</span></a>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="images/2.png" alt="">
-                        </div>
-                        <h5 class="text-center p-4">3Coeur Cardiology Center</h5>
-                        <a href="#" class="text-center"><span>Go Visit</span></a>
-                    </div>
+                    <?php   
+                    }
+                    ?>
                 </div>
             </div>
         </div>
