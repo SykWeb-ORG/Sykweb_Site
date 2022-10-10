@@ -205,7 +205,7 @@ $stmt = $conn->query($sql);
                                 </div>
                                 <div class="modal-body">
                                     <video class="video_service" controls>
-                                        <source src="images/SYKWEB.mp4" type="video/mp4">
+                                        <source src="images/WEB.mp4" type="video/mp4">
                                       </video>
                                 </div>
                                 <div class="modal-footer">
@@ -259,7 +259,7 @@ $stmt = $conn->query($sql);
                                 </div>
                                 <div class="modal-body">
                                     <video class="video_service" controls>
-                                        <source src="images/SYKWEB.mp4" type="video/mp4">
+                                        <source src="images/SEO.mp4" type="video/mp4">
                                       </video>
                                 </div>
                                 <div class="modal-footer">
