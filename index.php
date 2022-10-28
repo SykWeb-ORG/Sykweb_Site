@@ -205,7 +205,7 @@ $stmt = $conn->query($sql);
                                 </div>
                                 <div class="modal-body">
                                     <video class="video_service" controls>
-                                        <source src="images/SYKWEB.mp4" type="video/mp4">
+                                        <source src="images/WEB.mp4" type="video/mp4">
                                       </video>
                                 </div>
                                 <div class="modal-footer">
@@ -220,10 +220,10 @@ $stmt = $conn->query($sql);
                 <h1>Graphic Designing</h1>
                 <div class="content">
                     <p>Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users' specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.</p>
-                    <p class="Read_more" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <p class="Read_more" data-bs-toggle="modal" data-bs-target="#Graphic">
                         <a href="#" title="See More"></a>
                     </p>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="Graphic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -232,7 +232,7 @@ $stmt = $conn->query($sql);
                                 </div>
                                 <div class="modal-body">
                                     <video class="video_service" controls>
-                                        <source src="images/SYKWEB.mp4" type="video/mp4">
+                                        <source src="images/SYKWEB_graphic.mp4" type="video/mp4">
                                       </video>
                                 </div>
                                 <div class="modal-footer">
@@ -247,10 +247,10 @@ $stmt = $conn->query($sql);
                 <h1>Professional SEO Services</h1>
                 <div class="content">
                     <p>Professional SEO services are search engine optimization services that work to improve your visibility in search results so that your business can capture more qualified traffic from the web. Most professional SEO services will include keyword research, content creation, outreach, and more</p>
-                    <p class="Read_more" id="click_video" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <p class="Read_more" id="click_video" data-bs-toggle="modal" data-bs-target="#SEO">
                         <a href="#" title="See More" ></a>
                     </p>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="SEO" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -259,7 +259,7 @@ $stmt = $conn->query($sql);
                                 </div>
                                 <div class="modal-body">
                                     <video class="video_service" controls>
-                                        <source src="images/SYKWEB.mp4" type="video/mp4">
+                                        <source src="images/SEO.mp4" type="video/mp4">
                                       </video>
                                 </div>
                                 <div class="modal-footer">
@@ -274,11 +274,11 @@ $stmt = $conn->query($sql);
                 <h1>Mobile App Development</h1>
                 <div class="content">
                     <p>Mobile application development is the set of processes and procedures involved in writing software for small, wireless computing devices, such as smartphones and other hand-held devices.</p>
-                    <p class="Read_more" id="click_video" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <p class="Read_more" id="click_video" data-bs-toggle="modal" data-bs-target="#Mobile">
                         <a href="#" title="See More"></a>
                     </p>
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="Mobile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -300,10 +300,10 @@ $stmt = $conn->query($sql);
                 <h1>Content Creation Services</h1>
                 <div class="content">
                     <p>Content creation services are services that develop, write, and publish content for your business. Content creation can range from producing blog posts to white papers to emails. Content creation plans may also include search engine optimization, graphics, video, and more</p>
-                    <p class="Read_more" id="click_video" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <p class="Read_more" id="click_video" data-bs-toggle="modal" data-bs-target="#ContentCreation">
                         <a href="#" title="See More"></a>
                     </p>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="ContentCreation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -311,7 +311,7 @@ $stmt = $conn->query($sql);
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                  <video src="images/SYKWEB.mp4" class="video_service"></video>
+                                  <video src="images/creation content (1).mp4" class="video_service"></video>
                                 </div>
                                 <div class="modal-footer">
                                 </div>
