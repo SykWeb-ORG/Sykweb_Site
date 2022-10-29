@@ -350,10 +350,10 @@ $stmt = $conn->query($sql);
                 <h1>Desktop App Development</h1>
                 <div class="content">
                     <p> Desktop app development is very similar to mobile app development in that software is developed for particular devices and operating systems. In this case, desktop development refers to software built to run on computers</p>
-                    <p class="Read_more" id="click_video" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <p class="Read_more" id="click_video" data-bs-toggle="modal" data-bs-target="#Desktop">
                         <a href="#" title="See More"></a>
                     </p>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="Desktop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -362,7 +362,7 @@ $stmt = $conn->query($sql);
                                 </div>
                                 <div class="modal-body">
                                   <video class="video_service" controls>
-                                    <source src="images/SYKWEB.mp4" type="video/mp4">
+                                    <source src="images/Desktop.mp4" type="video/mp4">
                                   </video>
                                 </div>
                                 <div class="modal-footer">
