@@ -131,10 +131,10 @@ $stmt = $conn->query($sql);
         <div class="text">
             <div class="line">
             <?php
-                function js_css()
+                function line_one()
                 {
                     global $conn;
-                    $langages = "SELECT * FROM langages WHERE `id` BETWEEN 1 AND 2";
+                    $langages = "SELECT * FROM langages WHERE `id` BETWEEN 1 AND 3";
                     $res = $conn->query($langages)->fetchAll();
                     foreach ($res as  $lang) {
                     ?>
@@ -143,16 +143,16 @@ $stmt = $conn->query($sql);
                     }
                 }
                 for ($i=0; $i <3 ; $i++) { 
-                   js_css();
+                    line_one();
                 }
                 ?>
             </div>
             <div class=" line line2">
             <?php
-                function html_sass()
+                function line_two()
                 {
                     global $conn;
-                    $langages = "SELECT * FROM `langages` WHERE `id` BETWEEN 3 AND 4";
+                    $langages = "SELECT * FROM `langages` WHERE `id` BETWEEN 4 AND 7";
                     $res = $conn->query($langages)->fetchAll();
                     foreach ($res as  $lang) {
                     ?>
@@ -161,16 +161,16 @@ $stmt = $conn->query($sql);
                     }
                 }
                 for ($i=0; $i <3 ; $i++) { 
-                   html_sass();
+                    line_two();
                 }
                 ?>
             </div>
             <div class="line line3">
                 <?php
-                    function flutter_dart()
+                    function line_three()
                     {
                         global $conn;
-                        $langages = "SELECT * FROM `langages` WHERE `id` BETWEEN 5 AND 6";
+                        $langages = "SELECT * FROM `langages` WHERE `id` BETWEEN 8 AND 11";
                         $res = $conn->query($langages)->fetchAll();
                         foreach ($res as  $lang) {
                         ?>
@@ -178,8 +178,8 @@ $stmt = $conn->query($sql);
                         <?php
                         }
                     }
-                    for ($i=0; $i <3 ; $i++) { 
-                        flutter_dart();
+                    for ($i=0; $i <4 ; $i++) { 
+                        line_three();
                     }
                 ?>
             </div>
