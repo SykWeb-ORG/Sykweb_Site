@@ -1155,3 +1155,16 @@ body {
     align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
+/* start stylesheet page single */
+.content_single{
+  display: flex;
+}
+.content_single img{
+  height: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.description{
+
+}
+/* end stylesheet page single */
