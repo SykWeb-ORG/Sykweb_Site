@@ -96,7 +96,7 @@ $stmt = $conn->query($sql);
                         <span style="--d: 12s">UI design</span>
                     </div>
                 </h1>
-                <a href="#about">About us</a>
+                <a href="#contact">Contact Us</a>
             </div>
         </section>
     </section>
