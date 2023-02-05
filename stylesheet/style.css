@@ -105,7 +105,7 @@ body {
   left: 500px;
   top: 0;
   width: 100px;
-  opacity: 0;
+  opacity: 0.2;
   transform-origin: center;
   -webkit-animation: shape5 linear 25s infinite;
           animation: shape5 linear 25s infinite;
@@ -135,7 +135,7 @@ body {
   position: relative;
   padding: 10px;
 }
-.site_body .main header .links a:hover {
+/* .site_body .main header .links a:hover {
   background-color: #3d5a80;
   color: #fff;
   background-color: #3d5a80;
@@ -143,7 +143,7 @@ body {
   border-radius: 50px;
   transform-origin: left;
   transition: 0.4s ease-in;
-}
+} */
 .site_body .main header .logo a img {
   width: 100px;
 }
@@ -229,7 +229,7 @@ body {
   z-index: -1;
   visibility: hidden;
   transition: all 0.375s;
-  height: 100vh;
+  height: 105vh;
 }
 .site_body .main header .device .main-nav::before {
   content: "";
