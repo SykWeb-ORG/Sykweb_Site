@@ -99,7 +99,7 @@ $res = $conn->query($sql)->fetchAll();
                     </span>
                     <span class="project_content_details_item">
                         <span class="project_content_details_item_title">Link :</span>
-                        <span class="project_content_details_item_value">www.project.com</span>
+                        <span class="project_content_details_item_value"><a href="www.project.com">www.project.com</a> </span>
                     </span>
                     <span class="project_content_details_item">
                         <span class="project_content_details_item_title">Année :</span>
