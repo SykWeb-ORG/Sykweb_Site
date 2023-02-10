@@ -48,15 +48,15 @@ $stmt = $conn->query($sql);
             </div>
             <header class="header_container">
                 <div class="links">
-                    <a href="#main"> <span>Home</span><i></i></a>
-                    <a href="#about"> <span>About us</span><i></i></a>
+                    <a href="index.php"> <span>Home</span><i></i></a>
+                    <a href="index.php#about"> <span>About us</span><i></i></a>
                 </div>
                 <div class="logo">
-                    <a href="#main"><img src="./images/logo.png" alt=""></a>
+                    <a href="index.php"><img src="./images/logo.png" alt=""></a>
                 </div>
                 <div class="links">
-                    <a href="#service"><span>Services</span><i></i></a>
-                    <a href="#project"><span>Projects</span><i></i></a>
+                    <a href="index.php#service"><span>Services</span><i></i></a>
+                    <a href="index.php#project"><span>Projects</span><i></i></a>
                 </div>
                 <div class="device">
                     <div class="container">
@@ -70,16 +70,16 @@ $stmt = $conn->query($sql);
                         <nav class="main-nav" id="main-nav">
                             <ul>
                                 <li class="link">
-                                    <a href="#main">Home</a>
+                                    <a href="index.php">Home</a>
                                 </li>
                                 <li class="link">
-                                    <a href="#service">Services</a>
+                                    <a href="index.php#service">Services</a>
                                 </li>
                                 <li class="link">
-                                    <a href="#project">Projects</a>
+                                    <a href="index.php#project">Projects</a>
                                 </li>
                                 <li class="link">
-                                    <a href="#about">About us</a>
+                                    <a href="index.php#about">About us</a>
                                 </li>
                             </ul>
                         </nav>
