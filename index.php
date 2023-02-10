@@ -118,7 +118,7 @@ $stmt = $conn->query($sql);
                 </p>
                 <div class="btn">
                     <a href="#">Our Team</a>
-                    <a href="#contact">Contact Us</a>
+                    <a href="contact.php">Contact Us</a>
                 </div>
             </div>
         </div>

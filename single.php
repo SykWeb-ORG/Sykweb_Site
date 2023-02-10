@@ -157,7 +157,10 @@ $res = $conn->query($sql)->fetchAll();
                         </div>
                     </div>
                 </div>
-                <a href="www.google.com" class="btn">GO VISIT</a>
+                <div class="btn">
+                    <a href="www.project.com">Go Visit</a>
+                    <a href="contact.php">Order Similar Project</a>
+                </div>
             </section>
             <?php
             foreach ($res as $key) {
