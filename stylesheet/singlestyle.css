@@ -124,7 +124,7 @@ strong {
   padding: 0 10.5em;
   margin-bottom: 15px;
 }
-.project_description .btn{
+.project_description .btn a{
   font-size: 14px;
     margin-top: 20px;
     color: #3d5a80;
@@ -137,7 +137,7 @@ strong {
     box-shadow: 0px 12px 32px rgb(39 69 190 / 10%);
     border: 1px solid #3d5a80;
 }
-.project_description .btn:hover {
+.project_description .btn a:hover {
   color: #fff;
   background-color: #3d5a80;
   transform-origin: left;
