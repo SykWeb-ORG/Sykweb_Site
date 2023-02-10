@@ -19,6 +19,10 @@ $res = $conn->query($sql)->fetchAll();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <title>SYKWEB</title>
+    <!-- magnific popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+    integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="stylesheet/singlestyle.css">
 </head>
@@ -113,6 +117,46 @@ $res = $conn->query($sql)->fetchAll();
                     with creative designs. Because of my passion for design,precision and details, I created Codegrid to bring
                     concepts of web designing to you.
                 </span>
+                <div class="screenshots">
+                    <div class="box-container">
+    
+                        <div class="box" data-aos="zoom-in">
+                            <a href="images/about1.jpg">
+                                <img src="images/about1.jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="box" data-aos="zoom-in">
+                            <a href="images/about1.jpg" >
+                                <img src="images/about1.jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="box" data-aos="zoom-in">
+                            <a href="images/about1.jpg">
+                                <img src="images/about1.jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="box" data-aos="zoom-in">
+                            <a href="images/about1.jpg" >
+                                <img src="images/about1.jpg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="box" data-aos="zoom-in">
+                            <a href="images/about2.jpeg" >
+                                <img src="images/about2.jpeg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="box" data-aos="zoom-in">
+                            <a href="images/about1.jpg" title="">
+                                <img src="images/about1.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <a href="www.google.com" class="btn">GO VISIT</a>
             </section>
             <?php
@@ -130,86 +174,6 @@ $res = $conn->query($sql)->fetchAll();
             <?php
             }
             ?>
-        </section>
-        <section id="contact" class="contact">
-            <h1 class="contact_title">Contact Us</h1>
-            <div class="container">
-                <span class="big_circle"></span>
-                <div class="form">
-                    <div class="contact_info">
-                        <h3 class="title">Let's get in touch</h3>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet consecteur adipsicuig elit. Saepe
-                            dolorum adipisci recusandae praesentium dicta!
-                        </p>
-                        <div class="info">
-                            <div class="information">
-                                <i class="info_icon fa-solid fa-map-location-dot"></i>
-                                <a href="" class="curs">
-                                    <p>Marrakech , Morrocco</p>
-                                </a>
-                            </div>
-                            <div class="information">
-                                <i class="info_icon fa-solid fa-envelope"></i>
-                                <a href="" class="curs">
-                                    <p>sykweb10@gmail.com</p>
-                                </a>
-                            </div>
-                            <div class="information">
-                                <i class="info_icon fa-solid fa-phone"></i>
-                                <a href="#" class="curs">
-                                    <p>+212-625-461-645</p>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- <div class="social_media">
-                        <p>Connect with us :</p>
-                        <div class="social_icon">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div> -->
-                    </div>
-                    <div class="contact_form">
-                        <span class="circle one"></span>
-                        <span class="circle two"></span>
-                        <form action="" method="POST">
-                            <h3 class="title">Send Email</h3>
-                            <div class="input_container">
-                                <input type="text" name="name" class="input">
-                                <label for="name">Username</label>
-                                <span>Username</span>
-                            </div>
-                            <div class="input_container">
-                                <input type="email" name="email" class="input">
-                                <label for="email">Email</label>
-                                <span>Email</span>
-                            </div>
-                            <div class="input_container">
-                                <input type="tel" name="phone" class="input">
-                                <label for="phone">Phone Number</label>
-                                <span>Phone Number</span>
-                            </div>
-                            <div class="input_container textarea">
-                                <textarea name="message" class="input"></textarea>
-                                <label for="message">Message</label>
-                                <span>Message</span>
-                            </div>
-                            <input type="submit" name="btn_send_email" value="Send" class="btn">
-                        </form>
-                    </div>
-                </div>
-            </div>
         </section>
         <section class="footer" id="footer">
             <div class="footer__container container">
@@ -249,6 +213,12 @@ $res = $conn->query($sql)->fetchAll();
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <!-- boostrap -->
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.js" type="text/javascript"></script>
+    <!-- magnific popup js link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"
+    integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- aos js file cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </body>
 
 </html>
