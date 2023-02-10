@@ -219,10 +219,10 @@ $res = $conn->query($sql)->fetchAll();
                     <span> ~ Give Birth To Your Idea ~ </span>
                 </p>
                 <ul class="footer_social">
-                    <a href="" target="_blank" class="footer_social-link">
+                    <a href="https://www.facebook.com/profile.php?id=100089940784275" target="_blank" class="footer_social-link">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" target="_blank" class="footer_social-link">
+                    <a href="https://www.instagram.com/sykweb/" target="_blank" class="footer_social-link">
                         <i class="fab fa-instagram"></i>
                     </a>
                     <a href="#" target="_blank" class="footer_social-link">
