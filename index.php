@@ -400,11 +400,11 @@ $stmt = $conn->query($sql);
                     while($row = $stmt->fetch()){
                     ?>
                         <div class="slider-card">
-                            <div class="d-flex justify-content-center align-items-center mb-4">
+                            <div class="d-flex justify-content-center align-items-center mb-4"> 
                                 <img src="images/<?php echo $row["src_image"]?>" alt="">
                             </div>
                             <h5 class="text-center p-4"><?php echo $row['name_project']?></h5>
-                            <a href="single.php?name=<?php echo $row['link_project'] ?>"  class="text-center"><span>Go Visit</span></a>
+                            <a href="single.php?name=<?php echo $row['name_project'] ?>"  class="text-center"><span>Go Visit</span></a>
                         </div>
                     <?php   
                     }

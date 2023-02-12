@@ -2,8 +2,10 @@
 include_once('../Sykweb_Site/database/db.php');
 
 $name = $_GET['name'];
-$sql = "SELECT * FROM description_project WHERE name='$name'";
-$res = $conn->query($sql)->fetchAll();
+$res=$conn->prepare("SELECT * FROM `projects` WHERE name_project=?"); 
+$res->execute(array($name));
+$row=$res->fetch();
+
 // print_r($res);
 ?>
 <html lang="en">
@@ -90,32 +92,31 @@ $res = $conn->query($sql)->fetchAll();
                 </div>
             </header>
             <section class="project_intro">
-                <h1 class="project_title">Project Name</h1>
+                <h1 class="project_title"><?php echo $row['name_project'] ?></h1>
                 <section class="project_content_image">
                     <div class="project_image">
-                        <img width="600" height="600" src="./images/about2.jpeg" class="" alt="Project Name">
+                        <img width="600" height="600" src="./images/<?php echo $row['src_image'] ?>" class="" alt="Project Name">
                     </div>
                 </section>
                 <section class="project_content_details">
                     <span class="project_content_details_item">
                         <span class="project_content_details_item_title">Projet :</span>
-                        <span class="project_content_details_item_value">Name</span>
+                        <span class="project_content_details_item_value"><?php echo $row['name_project'] ?></span>
                     </span>
                     <span class="project_content_details_item">
                         <span class="project_content_details_item_title">Link :</span>
-                        <span class="project_content_details_item_value"><a href="www.project.com">www.project.com</a> </span>
+                        <span class="project_content_details_item_value"><a href="<?php echo $row['link_project'] ?>"><?php echo $row['link_project'] ?></a> </span>
                     </span>
                     <span class="project_content_details_item">
                         <span class="project_content_details_item_title">Année :</span>
-                        <span class="project_content_details_item_value">2022</span>
+                        <span class="project_content_details_item_value"><?php echo $row['année'] ?></span>
                     </span>
                 </section>
             </section>
             <section class="project_description">
                 <h2>Description:</h2>
-                <span>I code designs. Rad designs for rad learnersThe mission and the vision are to explore, scavenge and play
-                    with creative designs. Because of my passion for design,precision and details, I created Codegrid to bring
-                    concepts of web designing to you.
+                <span>
+                <?php echo $row['Description'] ?>
                 </span>
                 <div class="screenshots">
                     <div class="box-container">
@@ -158,24 +159,24 @@ $res = $conn->query($sql)->fetchAll();
                     </div>
                 </div>
                 <div class="btn">
-                    <a href="www.project.com">Go Visit</a>
+                    <a href="<?php echo $row['link_project'] ?>" class="btn">GO VISIT</a>
                     <a href="contact.php">Order Similar Project</a>
                 </div>
             </section>
             <?php
-            foreach ($res as $key) {
+            //foreach ($row as $key) {
             ?>
-                <div class="content_single">
-                    <img class="img" src="images/<?php echo $key["image"] ?>" alt="">
+                <!-- <div class="content_single">
+                    <img class="img" src="images/<?php echo $row["src_image"] ?>" alt="">
                     <span class="description">
-                        <?php echo $key['description']; ?>
+                        <?php //echo $row['Description']; ?>
                     </span>
                 </div>
                 <span class="langage">
-                    <?php echo $key['langage'] ?>
-                </span>
+                    <?php //echo $row['langage'] ?>
+                </span> -->
             <?php
-            }
+            //}
             ?>
         </section>
         <section class="footer" id="footer">
