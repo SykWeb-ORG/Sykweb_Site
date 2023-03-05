@@ -1,6 +1,8 @@
 <?php
 include_once('../Sykweb_Site/database/db.php');
 
+$annee = !empty($row['année'])?$row['année']:"2022";
+$description = !empty($row['Description'])?$row['Description']:"";
 $name = $_GET['name'];
 $res=$conn->prepare("SELECT * FROM `projects` WHERE name_project=?"); 
 $res->execute(array($name));
@@ -109,14 +111,14 @@ $row=$res->fetch();
                     </span>
                     <span class="project_content_details_item">
                         <span class="project_content_details_item_title">Année :</span>
-                        <span class="project_content_details_item_value"><?php echo $row['année'] ?></span>
+                        <span class="project_content_details_item_value"><?php echo $annee ?></span>
                     </span>
                 </section>
             </section>
             <section class="project_description">
                 <h2>Description:</h2>
                 <span>
-                <?php echo $row['Description'] ?>
+                <?php echo $description?>
                 </span>
                 <div class="screenshots">
                     <div class="box-container">
@@ -159,7 +161,7 @@ $row=$res->fetch();
                     </div>
                 </div>
                 <div class="btn">
-                    <a href="<?php echo $row['link_project'] ?>" class="btn">GO VISIT</a>
+                    <a href="<?php echo $row['link_project'] ?>">GO VISIT</a>
                     <a href="contact.php">Order Similar Project</a>
                 </div>
             </section>
