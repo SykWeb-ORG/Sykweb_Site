@@ -55,15 +55,17 @@ $row=$res->fetch();
             </div>
             <header class="header_container">
                 <div class="links">
-                    <a href="index.php"> <span>Home</span><i></i></a>
+                    <a href="index.php#main"><span>Home</span><i></i></a>
                     <a href="index.php#about"> <span>About us</span><i></i></a>
+                    <a href="index.php#service"><span>Services</span><i></i></a>
                 </div>
                 <div class="logo">
                     <a href="index.php#main"><img src="./images/logo.png" alt=""></a>
                 </div>
                 <div class="links">
-                    <a href="index.php#service"><span>Services</span><i></i></a>
+                    <a href="team.php"><span>Team</span><i></i></a>
                     <a href="index.php#project"><span>Projects</span><i></i></a>
+                    <a href="contact.php"> <span>contact</span><i></i></a>
                 </div>
                 <div class="device">
                     <div class="container">
@@ -77,16 +79,22 @@ $row=$res->fetch();
                         <nav class="main-nav" id="main-nav">
                             <ul>
                                 <li class="link">
-                                    <a href="index.php">Home</a>
+                                    <a href="index.php#main">Home</a>
+                                </li>
+                                <li class="link">
+                                    <a href="index.php#about">About us</a>
                                 </li>
                                 <li class="link">
                                     <a href="index.php#service">Services</a>
                                 </li>
                                 <li class="link">
+                                    <a href="team.php">Our Team</a>
+                                </li>
+                                <li class="link">
                                     <a href="index.php#project">Projects</a>
                                 </li>
                                 <li class="link">
-                                    <a href="index.php#about">About us</a>
+                                    <a href="contact.php">Contact</a>
                                 </li>
                             </ul>
                         </nav>
