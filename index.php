@@ -37,7 +37,7 @@ $stmt = $conn->query($sql);
             </div>
        </div>
     </section>
-<div class="site_body">
+    <div class="site_body">
     <section id="main" class="main">
         <div class="shape">
             <img src="./images/back_logo.png" alt="" class="shape1">
@@ -48,6 +48,7 @@ $stmt = $conn->query($sql);
         </div>
         <header class="header_container">
             <div class="links">
+                <a href="#service"><span>Home</span><i></i></a>
                 <a href="#about"> <span>About us</span><i></i></a>
                 <a href="#service"><span>Services</span><i></i></a>
             </div>
@@ -55,6 +56,7 @@ $stmt = $conn->query($sql);
                 <a href="#main"><img src="./images/logo.png" alt=""></a>
             </div>
             <div class="links">
+                <a href="team.php"><span>Team</span><i></i></a>
                 <a href="#project"><span>Projects</span><i></i></a>
                 <a href="contact.php"> <span>contact</span><i></i></a>
             </div>
@@ -70,10 +72,16 @@ $stmt = $conn->query($sql);
                     <nav class="main-nav" id="main-nav">
                         <ul>
                             <li class="link">
+                            <a href="#main">Home</a>
+                            </li>
+                            <li class="link">
                             <a href="#about">About us</a>
                             </li>
                             <li class="link">
                                 <a href="#service">Services</a>
+                            </li>
+                            <li class="link">
+                                <a href="team.php">Our Team</a>
                             </li>
                             <li class="link">
                                 <a href="#project">Projects</a>
@@ -117,7 +125,7 @@ $stmt = $conn->query($sql);
                     Send me a message, we'll respond with an hour
                 </p>
                 <div class="btn">
-                    <a href="#">Our Team</a>
+                    <a href="team.php">Our Team</a>
                     <a href="contact.php">Contact Us</a>
                 </div>
             </div>
@@ -204,9 +212,6 @@ $stmt = $conn->query($sql);
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <video class="video_service" controls>
-                                        <source src="images/WEB.mp4" type="video/mp4">
-                                      </video>
                                 </div>
                                 <div class="modal-footer">
                                 </div>
@@ -231,9 +236,9 @@ $stmt = $conn->query($sql);
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <video class="video_service" controls>
+                                    <!-- <video class="video_service" controls>
                                         <source src="images/SYKWEB_graphic.mp4" type="video/mp4">
-                                      </video>
+                                      </video> -->
                                 </div>
                                 <div class="modal-footer">
                                 </div>
@@ -258,9 +263,9 @@ $stmt = $conn->query($sql);
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <video class="video_service" controls>
+                                    <!-- <video class="video_service" controls>
                                         <source src="images/SEO.mp4" type="video/mp4">
-                                      </video>
+                                      </video> -->
                                 </div>
                                 <div class="modal-footer">
                                 </div>
@@ -286,7 +291,7 @@ $stmt = $conn->query($sql);
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                  <video src="images/SYKWEB.mp4" class="video_service"></video>
+                                  <!-- <video src="images/SYKWEB.mp4" class="video_service"></video> -->
                                 </div>
                                 <div class="modal-footer">
                                 </div>
@@ -311,7 +316,7 @@ $stmt = $conn->query($sql);
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                  <video src="images/creation content (1).mp4" class="video_service"></video>
+                                  <!-- <video src="images/creation content (1).mp4" class="video_service"></video> -->
                                 </div>
                                 <div class="modal-footer">
                                 </div>
@@ -336,7 +341,7 @@ $stmt = $conn->query($sql);
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                  <video src="images/SYKWEB.mp4" class="video_service"></video>
+                                  <!-- <video src="images/SYKWEB.mp4" class="video_service"></video> -->
                                 </div>
                                 <div class="modal-footer">
                                 </div>
@@ -361,9 +366,9 @@ $stmt = $conn->query($sql);
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                  <video class="video_service" controls>
+                                  <!-- <video class="video_service" controls>
                                     <source src="images/Desktop.mp4" type="video/mp4">
-                                  </video>
+                                  </video> -->
                                 </div>
                                 <div class="modal-footer">
                                 </div>
@@ -382,7 +387,7 @@ $stmt = $conn->query($sql);
                     <div class="project__description">
                         <span>Contact us now<br></span> and get a 30% discount on your new project.
                     </div>
-                    <a href="#contact" class="button button--flex button--white">
+                    <a href="contact.php" class="button button--flex button--white">
                         Contact Us
                         <i class="fa-solid fa-circle-arrow-right pub_project__icon"></i>
                     </a>
@@ -450,5 +455,4 @@ $stmt = $conn->query($sql);
     <script src="./javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script></body>
-
 </html>
