@@ -93,7 +93,7 @@
                 </div>
                 <div class="row">
                     <!-- Column 1-->
-                    <div class="columnTeam">
+                    <!-- <div class="columnTeam">
                         <div class="cardTeam">
                             <div class="img-container">
                                 <img src="images/mohammed.jpg" />
@@ -115,7 +115,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Column 2-->
                     <div class="columnTeam">
                         <div class="cardTeam">
@@ -168,7 +168,7 @@
                     <div class="columnTeam">
                         <div class="cardTeam">
                             <div class="img-container">
-                                <img src="images/" />
+                                <img src="images/Soufiane.jpg" />
                             </div>
                             <h3>Soufiane El Kaabaoui</h3>
                             <p>Full-Stack Developer</p>
@@ -176,9 +176,9 @@
                                 <a href="https://www.instagram.com/soufianekaabawi/" target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
-                                <a href="#" target="_blank">
+                                <!-- <a href="#" target="_blank">
                                     <i class="fab fa-linkedin"></i>
-                                </a>
+                                </a> -->
                                 <a href="https://github.com/soufianeElkaabaoui" target="_blank">
                                     <i class="fab fa-github"></i>
                                 </a>
@@ -192,7 +192,7 @@
                     <div class="columnTeam">
                         <div class="cardTeam">
                             <div class="img-container">
-                                <img src="images/" />
+                                <img src="images/khalid.jpg" />
                             </div>
                             <h3>Khalid Ramadan</h3>
                             <p>Full-Stack Developer</p>
@@ -216,7 +216,7 @@
                     <div class="columnTeam">
                         <div class="cardTeam">
                             <div class="img-container">
-                                <img src="images/" />
+                                <img src="images/abdeladim.jpg" />
                             </div>
                             <h3>Abdelaadim Ajdie</h3>
                             <p>Back-End Developer</p>
@@ -224,9 +224,9 @@
                                 <a href="https://www.instagram.com/abdeladim_ajdie/" target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <!-- <a href="https://www.linkedin.com/" target="_blank">
                                     <i class="fab fa-linkedin"></i>
-                                </a>
+                                </a> -->
                                 <a href="https://github.com/abdeladimo" target="_blank">
                                     <i class="fab fa-github"></i>
                                 </a>
@@ -240,7 +240,7 @@
                     <div class="columnTeam">
                         <div class="cardTeam">
                             <div class="img-container">
-                                <img src="images/" />
+                                <img src="images/Houcine.jpg" />
                             </div>
                             <h3>Houcine El Gadiri</h3>
                             <p>Back-End Developer</p>
@@ -248,13 +248,13 @@
                                 <a href="https://www.instagram.com/houcine_elgadiri/" target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <!-- <a href="https://www.linkedin.com/" target="_blank">
                                     <i class="fab fa-linkedin"></i>
-                                </a>
+                                </a> -->
                                 <a href="https://github.com/Houcine3" target="_blank">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="mailto:@gmail.com">
+                                <a href="mailto:hossineelgadiri@gmail.com">
                                     <i class="fas fa-envelope"></i>
                                 </a>
                             </div>
